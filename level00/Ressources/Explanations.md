@@ -10,7 +10,6 @@ Find being in uppercase isn't meaningless, it gives us an hint: **we must use** 
 
 ```shell
   $> find / -xdev -user flag00 2>/dev/null
-
   /usr/sbin/john
 ```
 
@@ -18,7 +17,6 @@ This find command looks through everything in this filesystem to identify files 
 
 ```shell
   $> cat /usr/sbin/john
-
   cdiiddwpgswtgt
 ```
 
