@@ -1,6 +1,6 @@
 # Level 00
 
-As `user00` if we run `ls` we don't see anything at our disposal. Using the [Snow Crash introduction video](https://elearning.intra.42.fr/notions/127/subnotions/465/videos/404), we can see that there was a `README.md` file available to us back then in which we can read :
+As `level00` if we run `ls` we don't see anything at our disposal. Using the [Snow Crash introduction video](https://elearning.intra.42.fr/notions/127/subnotions/465/videos/404), we can see that there was a `README.md` file available to us back then in which we can read :
 
 ```shell
   FIND this first file who can run as flag00
@@ -13,7 +13,9 @@ Find being in uppercase isn't meaningless, it gives us an hint: **we must use** 
   /usr/sbin/john
 ```
 
-This find command looks through everything in this filesystem to identify files that are owned by `flag00` and redirect any errors (like missing permissions) to `/dev/null` so that our prompt isn't full of garbage. So we find one and only one file called `/usr/sbin/john`
+> This find command looks through everything in this filesystem to identify files that are owned by `flag00` and redirect any errors (like missing permissions) to `/dev/null` so that our prompt isn't full of garbage
+
+ So we find one and only one file called `/usr/sbin/john` with some text inside it.
 
 ```shell
   $> cat /usr/sbin/john
@@ -50,7 +52,7 @@ Trying to connect as `flag00` with this doesn't work. It doesn't look like a has
 +25	dejjeexqhtxuhu
 ```
 
-Everything looks like garbage except the **ROT15** one being `nottoohardhere`. This is indeed the password for `flag00`. All we need to do is to use `getflag` now!
+ Everything looks like garbage except the **ROT15** one being `nottoohardhere`. This is indeed the password for `flag00`. All we need to do is to use `getflag` now!
 
 ```shell
   $> su flag00

@@ -1,6 +1,6 @@
 # Level 01
 
-As `user01` if we run `ls` we don't see anything at our disposal. Unlike first exercice, `find` won't help us. We need to go elsewhere.
+As `level01` if we run `ls` we don't see anything at our disposal. Unlike first exercice, `find` won't help us. We need to go elsewhere.
 
 A good place to start is to check `/etc/passwd` for more information. It stores users known to the system, so we'll find the list of `levelXX` and `flagXX` among others.
 
@@ -45,14 +45,16 @@ In this file, each entry represent a user. All fields are separated by `:` and t
   Username:Password:UID:GID:Optional Infos:Home directory:Shell
 ```
 
-More informations about the format [here](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/). If we look closer to `flag01` user...
+>More informations about the format [here](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/).
+
+If we look closer to `flag01` user...
 
 ```shell
   $> cat /etc/passwd | grep flag01
   flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
 ```
 
-Unlike all of the other users where the password field is set as `x` which means that this encrypted password is stored in `/etc/shadow`, this one directly stores its hash in this field.
+> Unlike all of the other users where the password field is set as `x` which means that this encrypted password is stored in `/etc/shadow`, this one directly stores its hash in this field.
 
 To get the clear password we can give this hashed password to [`john`](https://www.openwall.com/john/) which is an opensource security auditing software.
 
