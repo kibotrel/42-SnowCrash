@@ -68,7 +68,7 @@ Since it is displayed as ASCII by default some non-printable characters are repl
 If we refer to the [ASCII Table](https://www.asciitable.com/), `7f` means **delete** and `0d` **return** so the password should be `ft_waNDReL0L` for user `flag02`. We can now get our flag for next level.
 
 ```shell
-  $> su flag01
+  $> su flag02
   Password: ft_waNDReL0L
 
   $> getflag
