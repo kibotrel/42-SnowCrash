@@ -70,7 +70,6 @@ If we refer to the [ASCII Table](https://www.asciitable.com/), `7f` means **dele
 ```shell
   $> su flag02
   Password: ft_waNDReL0L
-
   $> getflag
   Check flag.Here is your token : kooda2puivaav1idi4f57q8iq
 ```

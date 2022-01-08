@@ -57,7 +57,6 @@ Trying to connect as `flag00` with this doesn't work. It doesn't look like a has
 ```shell
   $> su flag00
   Password: nottoohardhere
-
   $> getflag
   Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
 ```

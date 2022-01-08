@@ -78,7 +78,6 @@ So, the hashed password `42hDRfypTqqnw` gives us `abcdefg` apprently. We can now
 ```shell
   $> su flag01
   Password: abcdefg
-
   $> getflag
   Check flag.Here is your token : f2av5il02puano7naaf6adaaf
 ```
