@@ -1,7 +1,5 @@
 # Level 09
 
-# Level 08
-
 As `level09`, running `ls` gives us a binary called `level09` and a file named `token`.
 
 ```shell
