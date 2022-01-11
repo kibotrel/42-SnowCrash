@@ -39,7 +39,7 @@ After checking manuals for the listed functions, we can identify a vulnerability
 We need to open port `6969` and listen for requests. Achieving this with [`nc`](https://linux.die.net/man/1/nc) is trivial.
 
 ```shell
-  $> 
+  $> nc -lk 6969
 ```
 
 > `-l` is used to listen for incoming connections and `-k` will make this listener lasting until termination rather that after the first received connection.
