@@ -19,7 +19,6 @@ As `level11`, running `ls` gives us a lua script...
     return data
   end
 
-
   while 1 do
     local client = server:accept()
     client:send("Password: ")
