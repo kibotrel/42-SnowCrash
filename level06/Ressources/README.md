@@ -1,5 +1,7 @@
 # Level 06
 
+## Resolution
+
 As `level06`, running `ls` gives us a binary called `level06` and a PHP script named `level06.php` inside our home folder. Here's the sourcecode for the latter.
 
 ```php
@@ -60,3 +62,9 @@ code on line 1
 > Using [curly syntax](https://www.php.net/manual/en/language.types.string.php#language.types.string.parsing.complex) we can ask PHP to replace a variable by its value. This way after `exec` evaluation the output message of `getflag` becomes the variable we try to access. Since PHP does not know it, an error with the original output is sent back to us.
 
 So, `wiok45aaoguiboiki2tuin6ub` is the flag for this level.
+
+
+## Ressources
+
+- [Regex modifier vulnerability](https://stackoverflow.com/questions/16986331/can-someone-explain-the-e-regex-modifier)
+- [PHP curly syntax](https://www.php.net/manual/en/language.types.string.php#language.types.string.parsing.complex)

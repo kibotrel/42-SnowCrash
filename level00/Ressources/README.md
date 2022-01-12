@@ -1,5 +1,7 @@
 # Level 00
 
+## Resolution
+
 As `level00` if we run `ls` we don't see anything at our disposal. Using the [Snow Crash introduction video](https://elearning.intra.42.fr/notions/127/subnotions/465/videos/404), we can see that there was a `README.md` file available to us back then in which we can read :
 
 ```shell
@@ -62,3 +64,8 @@ Trying to connect as `flag00` with this doesn't work. It doesn't look like a has
 ```
 
 So, `x24ti5gi3x0ol2eh4esiuxias` is the flag for this level.
+
+## Ressources
+
+- [Cipher identifier](https://www.dcode.fr/cipher-identifier)
+- [Caesar cipher decoder](https://www.dcode.fr/caesar-cipher)

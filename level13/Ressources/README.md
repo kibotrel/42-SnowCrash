@@ -1,5 +1,7 @@
 # Level 13
 
+## Resolution
+
 As `level13`, running `ls` gives us a binary file called `level13`...
 
 ```shell
@@ -55,4 +57,17 @@ Final trick is to make a copy of the original binary to drop the [setuid bit](ht
 
 So, `2A31L79asukciNyi8uppkEuSx` is the flag for this level.
 
+## Commands
 
+- Custom `getuid()` function
+
+  ```shell
+    printf '#include <unistd>\nuid_t getuid(void){return 4242;}\n' > /tmp/getuid.c
+  ```
+
+## Ressources
+
+- [LD_PRELOAD Trick](http://www.goldsborough.me/c/low-level/kernel/2016/08/29/16-48-53-the_-ld_preload-_trick/)
+- [Position independant code](https://en.wikipedia.org/wiki/Position-independent_code#:~:text=In%20computing%2C%20position%2Dindependent%20code,regardless%20of%20its%20absolute%20address.&text=Position%2Dindependent%20code%20can%20be,any%20memory%20address%20without%20modification.)
+- [Shared object libraries]()
+- [Setuid bit](https://en.wikipedia.org/wiki/Setuid)

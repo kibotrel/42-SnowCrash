@@ -1,5 +1,7 @@
 # Level 02
 
+## Resolution
+
 As `level02` if we run `ls` we see that a `level02.pcap` file is present in the home directory. [.pcap](https://www.reviversoft.com/en/file-extensions/pcap) files contains network traffic: **data packets**. These files are used to determine network status, allowing analyzers to attend to problems that may have occurred on the network and allowing them to study data communications.
 
 We'll use [Wireshark](https://www.wireshark.org/), probably the best known `.pcap` reader out there to look into this file. After downloading it we'll need to extract that file outside from the virtual machine to work with it.
@@ -77,3 +79,10 @@ If we refer to the [ASCII Table](https://www.asciitable.com/), `7f` means **dele
 So, `kooda2puivaav1idi4f57q8iq` is the flag for this level.
 
 <sup>1</sup> : This is a placeholder that you should replace by the IP you can retrieve via running `ifconfig` inside the VM.
+
+## Ressources
+
+- [Wireshark](https://www.wireshark.org/)
+- [scp](https://linux.die.net/man/1/scp)
+- [pcqp format](https://www.reviversoft.com/en/file-extensions/pcap)
+- [ASCII table](https://www.asciitable.com/)

@@ -1,5 +1,7 @@
 # Level 04
 
+## Resolution
+
 As `level04` if we run `ls` we see that a `level04.pl` script is present in the home directory.
 
 ```pl
@@ -36,3 +38,8 @@ Like the previous level, this script is executed as `flag04` so it has access to
 > The sequence `%3B` is equivalent to `;` to encode it safely in URL query.
 
 So, `ne2searoevaevoem4ov4ar8ap` is the flag for this level.
+
+## Resources
+
+- [URL escaping](https://www.w3schools.com/tags/ref_urlencode.ASP)
+- [Shell injection](https://matklad.github.io/2021/07/30/shell-injection.html)

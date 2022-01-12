@@ -1,5 +1,7 @@
 # Level 08
 
+## Resolution
+
 As `level08`, running `ls` gives us a binary called `level08` and a file named `token` which can't be read inside our home folder. Using the binary gives us:
 
 ```shell
@@ -40,7 +42,7 @@ User `flag08` owns both files so once redirected to the `token` file via symboli
   quif5eloekouj29ke0vouxean
 ```
 
-This looks like a password, use it to log as `flag08`and run `getflag` to finish this level.
+This looks like a password, use it to log as `flag08` and run `getflag` to finish this level.
 
 ```shell
   $> su flag08
@@ -50,3 +52,7 @@ This looks like a password, use it to log as `flag08`and run `getflag` to finish
 ```
 
 So, `25749xKZ8L7DkSCwJkT9dyv6f` is the flag for this level.
+
+## Ressources
+
+- [Symbolic link vulnerabilities](https://lettieri.iet.unipi.it/hacking/symlinks.pdf)

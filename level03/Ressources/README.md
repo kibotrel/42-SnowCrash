@@ -1,5 +1,7 @@
 # Level 03
 
+## Resolution
+
 As `level03` if we run `ls` we see that a `level03` binary is present in the home directory.
 
 ```shell
@@ -52,3 +54,10 @@ Finally, run the binary once more to get this level's flag.
 ```
 
 So, `qi0maab88jeaj46qoumi7maus` is the flag for this level.
+
+## Ressources
+
+- [ltrace](https://man7.org/linux/man-pages/man1/ltrace.1.html)
+- [system](https://man7.org/linux/man-pages/man3/system.3.html)
+- [$PATH](https://medium.com/@jalendport/what-exactly-is-your-shell-path-2f076f02deb4)
+

@@ -138,3 +138,8 @@ So, `7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ` is the flag for this level.
   printf "file /bin/getflag\ncatch syscall ptrace\ncommands 1\nset \$eax = 0\ncontinue\nend\nbreak getuid\nrun\nstep\nprint \$eax\nset \$eax = 3014\nprint \$eax\continue\n" > /tmp/getflag.gdb
   ```
 
+## Ressources
+
+- [gdb](https://www.cs.cmu.edu/~gilpin/tutorial/)
+- [ptrace](https://man7.org/linux/man-pages/man2/ptrace.2.html)
+- [x86 Assembly instruction list](https://en.wikipedia.org/wiki/X86_instruction_listings)

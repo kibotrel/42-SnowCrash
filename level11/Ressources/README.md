@@ -1,5 +1,7 @@
 # Level 11
 
+## Resolution
+
 As `level11`, running `ls` gives us a lua script...
 
 ```lua
@@ -59,5 +61,3 @@ Since it evaluates the `pass` variable, which is our input, we can perform the s
 ```
 
 So, `fa6v5ateaw21peobuub8ipe6s` is the flag for this level.
-
-

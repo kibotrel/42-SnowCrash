@@ -1,5 +1,7 @@
 # Level 01
 
+## Resolution
+
 As `level01` if we run `ls` we don't see anything at our disposal. Unlike first exercice, `find` won't help us. We need to go elsewhere.
 
 A good place to start is to check `/etc/passwd` for more information. It stores users known to the system, so we'll find the list of `levelXX` and `flagXX` among others.
@@ -83,3 +85,8 @@ So, the hashed password `42hDRfypTqqnw` gives us `abcdefg` apprently. We can now
 ```
 
 So, `f2av5il02puano7naaf6adaaf` is the flag for this level.
+
+## Ressources
+
+- [John the ripper](https://www.openwall.com/john/)
+- [/etc/passwd format](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/)

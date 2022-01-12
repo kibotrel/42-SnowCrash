@@ -1,5 +1,7 @@
 # Level 07
 
+## Resolution
+
 As `level07`, running `ls` gives us a binary called `level07` inside our home folder. Using `ltrace` on it gives us the following...
 
 ```shell

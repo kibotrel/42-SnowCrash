@@ -1,5 +1,7 @@
 # Level 12
 
+## Resolution
+
 As `level12`, running `ls` gives us a perl script...
 
 ```perl
@@ -83,4 +85,6 @@ Finally, all we have to do is retrieving the password from the file we stored th
 
 So, `g1qKMiRpXf53AWhDaU7FEkczr` is the flag for this level.
 
+## Ressources
 
+- [`egrep`](https://linux.die.net/man/1/egrep)

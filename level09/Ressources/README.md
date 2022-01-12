@@ -1,5 +1,7 @@
 # Level 09
 
+## Resolution
+
 As `level09`, running `ls` gives us a binary called `level09` and a file named `token`.
 
 ```shell
@@ -39,6 +41,7 @@ Once again, we need to use `scp` to retrieve the file and decipher it.
 
 ```shell
   $> scp -P 4242 level09@192.168.1.73:token .
+  $> chmod 777 token
   $> node decipher.js token
   f3iji1ju5yuevaus41q1afiuq
 ```
