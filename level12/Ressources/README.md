@@ -1,9 +1,9 @@
-# Level 11
+# Level 12
 
 As `level12`, running `ls` gives us a perl script...
 
 ```perl
-  $> cat cat level12.pl 
+  $> cat level12.pl 
 
   #!/usr/bin/env perl
   # localhost:4646
