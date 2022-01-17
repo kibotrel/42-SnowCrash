@@ -84,5 +84,5 @@ So, `kooda2puivaav1idi4f57q8iq` is the flag for this level.
 
 - [Wireshark](https://www.wireshark.org/)
 - [scp](https://linux.die.net/man/1/scp)
-- [pcqp format](https://www.reviversoft.com/en/file-extensions/pcap)
+- [pcap format](https://www.reviversoft.com/en/file-extensions/pcap)
 - [ASCII table](https://www.asciitable.com/)

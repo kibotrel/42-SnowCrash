@@ -135,7 +135,7 @@ So, `7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ` is the flag for this level.
 
 - Debugger routine:
   ```
-  printf "file /bin/getflag\ncatch syscall ptrace\ncommands 1\nset \$eax = 0\ncontinue\nend\nbreak getuid\nrun\nstep\nprint \$eax\nset \$eax = 3014\nprint \$eax\continue\n" > /tmp/getflag.gdb
+  printf "file /bin/getflag\ncatch syscall ptrace\ncommands 1\nset \$eax = 0\ncontinue\nend\nbreak getuid\nrun\nstep\nprint \$eax\nset \$eax = 3014\nprint \$eax\ncontinue\n" > /tmp/getflag.gdb
   ```
 
 ## Ressources
