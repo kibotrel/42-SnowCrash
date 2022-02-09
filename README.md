@@ -1,4 +1,4 @@
-# 42-Snowcrash
+# 42-SnowCrash
 
 This project is an introduction to information security. The goal is to find and exploit vulnerabilities throughout the different levels.
 
